@@ -6,13 +6,14 @@
 /*   By: jcarbone <jcarbone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/26 13:18:38 by jcarbone          #+#    #+#             */
-/*   Updated: 2021/06/26 13:26:34 by jcarbone         ###   ########.fr       */
+/*   Updated: 2021/06/26 19:26:20 by jcarbone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+void	rush00(int x, int y);
 
 int	main(void)
 {
-	rush00(row, col);
+	rush00(5, 1);
 	return (0);
 }
