@@ -6,14 +6,14 @@
 /*   By: jcllobet <jcllobet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/26 13:18:38 by jcarbone          #+#    #+#             */
-/*   Updated: 2021/06/26 21:44:35 by jcllobet         ###   ########.fr       */
+/*   Updated: 2021/06/27 15:34:05 by jcllobet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush00(int x, int y);
+void	rush(int x, int y);
 
 int	main(void)
 {
-	rush00(5, 1);
+	rush(5, 3);
 	return (0);
 }

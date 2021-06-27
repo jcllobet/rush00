@@ -1,53 +1,53 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   rush04.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: andrmart's group  <marvin@42.fr            +#+  +:+       +#+        */
+/*   By: jcllobet <jcllobet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/26 09:28:24 by andrmart's group  #+#    #+#             */
-/*   Updated: 2021/06/27 14:31:40 by dpoveda-         ###   ########.fr       */
+/*   Created: 2021/06/26 09:28:24 by andrmart's        #+#    #+#             */
+/*   Updated: 2021/06/27 15:39:55 by jcllobet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c);
+void	ft_putchar(char x);
 
-void	ft_checkpost_and_putchar(int c, int r, int i, int j)
+void	ft_checkpost_and_putchar(int x, int y, int i, int j)
 {
 	if (j == 0 && i == 0)
 		ft_putchar('A');
-	else if (j == c - 1 && i == 0)
+	else if (j == x - 1 && i == 0)
 		ft_putchar('C');
-	else if (j == 0 && i == r - 1)
+	else if (j == 0 && i == y - 1)
 		ft_putchar('C');
-	else if (j == c - 1 && i == r - 1)
+	else if (j == x - 1 && i == y - 1)
 		ft_putchar('A');
 	else if (i == 0)
 		ft_putchar('B');
-	else if (i == r - 1)
+	else if (i == y - 1)
 		ft_putchar('B');
 	else if (j == 0)
 		ft_putchar('B');
-	else if (j == c - 1)
+	else if (j == x - 1)
 		ft_putchar('B');
 	else
 		ft_putchar(' ');
 }
 
-void	rush(int c, int r)
+void	rush(int x, int y)
 {
 	int	i;
 	int	j;
 
 	i = 0;
-	while (i < r)
+	while (i < y)
 	{
 		j = 0;
-		while (j < c)
+		while (j < x)
 		{
-			ft_checkpost_and_putchar(c, r, i, j);
+			ft_checkpost_and_putchar(x, y, i, j);
 			j++;
 		}
 		ft_putchar('\n');
